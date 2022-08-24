@@ -43,5 +43,32 @@ header {
     font: var(--tertiary--color);
     padding: 10px 15px;
     font-size: 30px;
-    font-weight: lighter;   
+    font-weight: lighter;
 }
+
+/*Hero Section*/
+
+.hero {
+    background-image: url("/assets/images/hexagon-wallpaper.png");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;   
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.subtitle {
+    font-size: 20px;
+    background-color: var(--tertiary--color);
+    color: var(--primary-color);
+    padding: 5px 5px;
+    margin: 15px;   
+}
+
+/*End of Hero Section*/
+
+
+ 
