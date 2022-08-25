@@ -55,11 +55,19 @@ header {
     margin: 0 50px;
 }
 
+.navigation li {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--tertiary--color);
+    margin: 0 6px;
+}
+
 .navigation nav ul li a {
-    padding: 10px 15px;
+    padding: 25px 20px;
     font-size: 30px;
     font-weight: lighter;
     color: var(--tertiary--color);
+    text-decoration: none;
+
 }
 
 /*End of Header section*/
@@ -115,9 +123,9 @@ header {
 }
 
 .about_me img {
-    height: 120px;  
+    height: 120px;
     float: left;
-    margin-right: 10px;     
+    margin-right: 10px;
 }
 
 /*work section*/
@@ -138,7 +146,12 @@ header {
     background-repeat: no-repeat;
     border: 5px solid;
     height: 150px;
+}
 
+.work_list div:hover {
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
 }
 
 .run_buddy {
@@ -220,7 +233,7 @@ header {
     }
 
     .navigation nav ul li a {
-        font-size: 29px;
+        font-size: 22px;
     }
 
     .title {
