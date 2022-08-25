@@ -113,7 +113,7 @@ header {
     width: 80%;
     text-align: justify;
     padding: 20px 50px 20px 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--secondary-color);
 }
 
@@ -141,11 +141,11 @@ header {
 }
 
 .work_list div {
-    width: 250px;
-    background-size: 250px 150px;
+    width: 200px;
+    background-size: 200px 150px;
     background-repeat: no-repeat;
     border: 5px solid;
-    height: 150px;
+    height:150px;
 }
 
 .work_list div:hover {
@@ -173,7 +173,7 @@ header {
 }
 
 .horiseon {
-    background-image: url(/assets/images/Horiseon.png);
+    background-image: url(/assets/images/Horiseon2.png);
     display: flex;
     align-items: flex-end;
 }
