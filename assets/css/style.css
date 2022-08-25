@@ -1,13 +1,19 @@
 :root {
-    --primary-color: dimgray;
-    --secondary-color: #000203;
+    --primary-color: rgb(105, 73, 103);
+    --secondary-color: #434146;
     --tertiary--color: White;
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(171, 165, 179);
+    font-family: sans-serif;
 }
 
 /*header section*/
@@ -32,32 +38,39 @@ header {
 .main_title a {
     text-decoration: none;
     color: var(--primary-color);
+    font: sans-serif;
+}
+
+.navigation {
+    font: var(--tertiary--color);
 }
 
 .navigation nav ul {
     list-style: none;
     display: flex;
+    margin: 0 50px;
 }
 
 .navigation nav ul li a {
-    font: var(--tertiary--color);
     padding: 10px 15px;
     font-size: 30px;
     font-weight: lighter;
+    color: var(--tertiary--color);
 }
 
-/*Hero Section*/
+/*End of Header section*/
 
+/*Hero Section*/
 .hero {
     background-image: url("/assets/images/hexagon-wallpaper.png");
     min-height: 200px;
     background-repeat: no-repeat;
     background-position: 100%;
-    background-size: cover;   
+    background-size: cover;
     display: flex;
     justify-content: right;
     align-items: flex-end;
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
 .subtitle {
@@ -65,10 +78,108 @@ header {
     background-color: var(--tertiary--color);
     color: var(--primary-color);
     padding: 5px 5px;
-    margin: 15px;   
+    margin: 15px;
 }
 
 /*End of Hero Section*/
 
+/*content section*/
+.title {
+    width: 25%;
+    border-right: 3px solid black;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-end;
+    font-size: 25px;
+    padding: 0 10px;
+    margin: 15px;
+    color: var(--secondary-color);
+    text-align: end;
+}
 
- 
+.description {
+    width: 75%;
+    text-align: justify;
+    padding: 20px 50px 20px 20px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+/*about me section*/
+.about_me {
+    display: flex;
+}
+
+/*work section*/
+.my_work {
+    display: flex;
+}
+
+.work_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+
+.work_list div {
+    width: 250px;
+    background-size: 250px 150px;
+    background-repeat: no-repeat;
+    border: 5px solid;
+
+}
+
+.run_buddy {
+    background-image: url(/assets/images/run-buddy.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.work_list a {
+    background-color: var(--primary-color);
+    text-align: right;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 3px;
+    border: 2px solid var(--primary-color);
+    color: var(--tertiary--color);
+}
+
+.horiseon {
+    background-image: url(/assets/images/Horiseon.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+.prework {
+    background-image: url(/assets/images/Prework.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Contact Me section*/
+.contact_me {
+    display: flex;
+}
+
+.contact_info {
+    border-spacing: auto;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.contact_info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact_info div {
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
+}
+
