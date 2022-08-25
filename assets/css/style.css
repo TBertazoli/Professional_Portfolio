@@ -1,0 +1,267 @@
+:root {
+    --primary-color: rgb(105, 73, 103);
+    --secondary-color: #434146;
+    --tertiary--color: White;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(171, 165, 179);
+    font-family: sans-serif;
+}
+
+/*header section*/
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 80px;
+    align-items: center;
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.main_title {
+    background-color: white;
+    padding: 0 5px 0 50px;
+    margin: 10px 10px 20px 0;
+    font: 20px normal;
+    height: auto;
+    width: auto;
+}
+
+.main_title a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font: sans-serif;
+}
+
+.navigation {
+    font: var(--tertiary--color);
+}
+
+.navigation nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 50px;
+}
+
+.navigation li {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--tertiary--color);
+    margin: 0 6px;
+}
+
+.navigation nav ul li a {
+    padding: 25px 20px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--tertiary--color);
+    text-decoration: none;
+
+}
+
+/*End of Header section*/
+
+/*Hero Section*/
+.hero {
+    background-image: url("/assets/images/hexagon-wallpaper.png");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+
+.subtitle {
+    font-size: 20px;
+    background-color: var(--tertiary--color);
+    color: var(--primary-color);
+    padding: 5px 5px;
+    margin: 15px;
+}
+
+/*End of Hero Section*/
+
+/*content section*/
+.title {
+    width: 20%;
+    border-right: 3px solid black;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-end;
+    font-size: 25px;
+    padding: 0 10px;
+    margin: 15px;
+    color: var(--secondary-color);
+    text-align: end;
+}
+
+.description {
+    width: 80%;
+    text-align: justify;
+    padding: 20px 50px 20px 20px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+/*about me section*/
+.about_me {
+    display: flex;
+}
+
+.about_me img {
+    height: 120px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*work section*/
+.my_work {
+    display: flex;
+}
+
+.work_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+
+.work_list div {
+    width: 250px;
+    background-size: 250px 150px;
+    background-repeat: no-repeat;
+    border: 5px solid;
+    height: 150px;
+}
+
+.work_list div:hover {
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+}
+
+.run_buddy {
+    background-image: url(/assets/images/run-buddy.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.work_list a {
+    background-color: var(--primary-color);
+    text-align: right;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 3px;
+    border: 2px solid var(--primary-color);
+    color: var(--tertiary--color);
+}
+
+.horiseon {
+    background-image: url(/assets/images/Horiseon.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+.prework {
+    background-image: url(/assets/images/Prework.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Contact Me section*/
+.contact_me {
+    display: flex;
+}
+
+.contact_info {
+    border-spacing: auto;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.contact_info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact_info div {
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
+}
+
+/*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
+/*this will be applied on any screen smaller than 980px*/
+@media screen and (max-width:980px) {
+    .work_list {
+        flex-direction: column;
+        min-height: 500px;
+    }
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+/*this will be applied on any screen between 768px to 575px*/
+@media screen and (max-width:768px) {
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_info div {
+        border-bottom: none;
+    }
+
+    .navigation nav ul {
+        margin: 0;
+    }
+
+    .navigation nav ul li a {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
+
+
+/*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
+/*this will be applied on any screen smaller than 575px*/
+@media screen and (max-width:575px) {
+
+
+
+    .navigation nav ul li a {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .description {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .contact_me .description {
+        font-size: 14px;
+    }
+}
