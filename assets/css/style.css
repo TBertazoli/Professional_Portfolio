@@ -74,7 +74,7 @@ header {
 
 /*Hero Section*/
 .hero {
-    background-image: url("assets/images/hexagon-wallpaper.png");
+    background-image: url("./assets/images/hexagon-wallpaper.png");
     min-height: 200px;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -155,7 +155,7 @@ header {
 }
 
 .run_buddy {
-    background-image: url(assets/images/run-buddy.png);
+    background-image: url(./assets/images/run-buddy.png);
     display: flex;
     align-items: flex-end;
 }
@@ -173,13 +173,13 @@ header {
 }
 
 .horiseon {
-    background-image: url(assets/images/Horiseon2.png);
+    background-image: url(./assets/images/Horiseon2.png);
     display: flex;
     align-items: flex-end;
 }
 
 .prework {
-    background-image: url(assets/images/Prework.png);
+    background-image: url(./assets/images/Prework.png);
     display: flex;
     align-items: flex-end;
 }
