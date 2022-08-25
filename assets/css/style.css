@@ -24,6 +24,10 @@ header {
     flex-wrap: wrap;
     min-height: 80px;
     align-items: center;
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .main_title {
@@ -85,7 +89,7 @@ header {
 
 /*content section*/
 .title {
-    width: 25%;
+    width: 20%;
     border-right: 3px solid black;
     display: flex;
     align-content: flex-start;
@@ -98,7 +102,7 @@ header {
 }
 
 .description {
-    width: 75%;
+    width: 80%;
     text-align: justify;
     padding: 20px 50px 20px 20px;
     font-size: 20px;
@@ -127,6 +131,7 @@ header {
     background-size: 250px 150px;
     background-repeat: no-repeat;
     border: 5px solid;
+    height: 150px;
 
 }
 
@@ -183,3 +188,61 @@ header {
     border-bottom: 2px solid;
 }
 
+/*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
+/*this will be applied on any screen smaller than 980px*/
+@media screen and (max-width:980px) {
+    .work_list {
+        flex-direction: column;
+        min-height: 500px;
+    }
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+/*this will be applied on any screen between 768px to 575px*/
+@media screen and (max-width:768px) {
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_info div {
+        border-bottom: none;
+    }
+
+    .navigation nav ul {
+        margin: 0;
+    }
+
+    .navigation nav ul li a {
+        font-size: 29px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
+
+
+/*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
+/*this will be applied on any screen smaller than 575px*/
+@media screen and (max-width:575px) {
+
+
+
+    .navigation nav ul li a {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .description {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .contact_me .description {
+        font-size: 14px;
+    }
+}
