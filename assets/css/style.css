@@ -114,6 +114,12 @@ header {
     display: flex;
 }
 
+.about_me img {
+    height: 120px;  
+    float: left;
+    margin-right: 10px;     
+}
+
 /*work section*/
 .my_work {
     display: flex;
