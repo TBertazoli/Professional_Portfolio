@@ -24,10 +24,6 @@ header {
     flex-wrap: wrap;
     min-height: 80px;
     align-items: center;
-    z-index: 9999;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
 .main_title {
