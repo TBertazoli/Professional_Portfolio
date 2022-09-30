@@ -19,3 +19,5 @@ Links
 https://tbertazoli.github.io/Professional_Portfolio/
 
 https://github.com/TBertazoli/Professional_Portfolio
+
+<img src="assets/images/Screenshot main page.png" alt="page with a portfolio description">
