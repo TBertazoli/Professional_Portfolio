@@ -157,7 +157,8 @@ header {
 
 .horiseon,
 .prework,
-.run_buddy {
+.run_buddy,
+.bikini {
     position: relative;
 }
 
@@ -171,7 +172,8 @@ header {
 
 .horiseon a,
 .prework a,
-.run_buddy a {
+.run_buddy a,
+.bikini a {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -180,6 +182,11 @@ header {
 .other_projects {
     display: flex;
     justify-content: space-evenly;
+}
+
+.bikini {
+    margin-top: 30px;
+    width: 80%;    
 }
 
 .box {
