@@ -2,7 +2,6 @@
     --primary-color: rgb(105, 73, 103);
     --secondary-color: #434146;
     --tertiary--color: White;
-
 }
 
 * {
@@ -105,16 +104,10 @@ header {
     text-align: end;
 }
 
-.description {
-    width: 80%;
-    text-align: justify;
-    padding: 20px 50px 20px 20px;
-    font-size: 18px;
-    color: var(--secondary-color);
-}
-
 /*about me section*/
-.about_me {
+.about_me,
+.my_work,
+.contact_me {
     display: flex;
 }
 
@@ -130,11 +123,15 @@ header {
     display: flex;
 }
 
-.work_list {
-    min-height: 150px;
+.description {    
+    width: 80%;
+    text-align: justify;
+    padding: 20px 50px 20px 20px;
+    font-size: 18px;
+    color: var(--secondary-color);
 }
 
-.work_list a {
+.description a {
     background-color: var(--primary-color);
     text-align: right;
     margin-bottom: 10px;
@@ -145,20 +142,11 @@ header {
     color: var(--tertiary--color);
 }
 
-.first_project {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.prework {
-    width: 80%;
-}
-
 .horiseon,
 .prework,
 .run_buddy,
-.bikini {
+.bikini,
+.lab {
     position: relative;
 }
 
@@ -170,65 +158,48 @@ header {
     height: 100%;
 }
 
-.horiseon a,
-.prework a,
-.run_buddy a,
-.bikini a {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.other_projects {
+.second_row_projects,
+.third_row_projects {
     display: flex;
     justify-content: space-evenly;
-}
-
-.bikini {
-    margin-top: 30px;
-    width: 80%;    
+    margin-top: 20px;
 }
 
 .box {
     border: 5px solid var(--primary-color);
     box-shadow: 4px 4px 8px #493858;
     border-radius: 5px;
+    margin: 20px;  
+    max-width: 60%;
 }
 
-.run_buddy,
-.horiseon {
-    width: 35%;
+.box a{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-
 
 /*Contact Me section*/
-.contact_me {
-    display: flex;
-}
 
-.contact_info {
-    border-spacing: auto;
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.contact_info a {
+.contact_info {    
+    font-weight: bold;    
     color: var(--secondary-color);
+    display: flex;    
+}
+
+.contact_info a {    
     text-decoration: none;
 }
 
 .contact_info div {
-    padding-bottom: 2px;
-    border-bottom: 2px solid;
+   margin:10px;
+   padding: 10px;
 }
 
 /*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
 /*this will be applied on any screen smaller than 980px*/
 @media screen and (max-width:980px) {
-    .work_list {
-        flex-direction: column;
+    .description {
         min-height: 500px;
     }
 }
@@ -263,8 +234,6 @@ header {
 /*this will be applied on any screen smaller than 575px*/
 @media screen and (max-width:575px) {
 
-
-
     .navigation nav ul li a {
         font-size: 18px;
     }
@@ -276,8 +245,9 @@ header {
     .description {
         padding: 5px;
         font-size: 12px;
-    }
 
+    }
+    
     .contact_me .description {
         font-size: 14px;
     }
